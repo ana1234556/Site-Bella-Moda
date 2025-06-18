@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e91e63;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: rgb(207, 198, 198);
+  text-decoration: none;
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+  background-color: #eea7bf;
+  min-height: 350px;
+  box-sizing: border-box;
+}
+
+/* NOVO: layout flexível para os produtos */
+section {
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha quando faltar espaço */
+  justify-content: center; /* centraliza os produtos */
+  gap: 100px;
+  margin-top: 20px;
+}
+
+/* NOVO: estilo para cada produto */
+.produto {
+  width: 120px;
+  text-align: center;
+}
+
+.produto h3 {
+  color: #d64676;
+}
+
+/* NOVO: estilo para as imagens dos produtos */
+.produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+
+  .produto {
+    width: 100%; /* produtos ficam em coluna no celular */
+  }
+}
+
+footer {
+  background-color: #f5c4e8;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+li {
+  position: static;
+  left: 585px;
+}
